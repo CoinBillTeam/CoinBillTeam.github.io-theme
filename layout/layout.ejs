@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
     <%- partial('_partial/head') %>
     <body>
+        <% config %>
         <!--%- partial('_partial/menu') %-->
-        <h3> who we are</h3>
-        </div>
+        <%- body %>
         <%- partial('_partial/footer') %>
     </body>
 </html>

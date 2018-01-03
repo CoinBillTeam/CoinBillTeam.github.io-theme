@@ -8,7 +8,7 @@ Coinbill team page hexo theme
 $ git clone https://github.com/minichicken/CoinBillTeam.github.io-theme.git themes/coinbill
 ```
 
-Then update your main `_config.yml` to set the theme to `coinbill`:
+Then update your main `_config.yml` to set the theme to `coinbill`
 
 ## Creater
 

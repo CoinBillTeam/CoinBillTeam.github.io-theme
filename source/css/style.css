@@ -1,0 +1,78 @@
+body {
+    background-image: url('/css/background.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu {
+    height: 369px;
+}
+
+.menu-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%
+}
+
+.coming {
+    height: 288px;
+    background-color: #efd251;
+    background-image: url('/css/logo-outline.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.coming-title {
+    font-size: 24pt;
+    color: #131313
+}
+
+.coming-content {
+    width: 796px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+    font-family: 'Nanum Gothic';
+    color: #131313
+}
+
+.introduce {
+    height: 736px;
+    background-color: white;
+}
+
+.introduce-layer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 796px;
+}
+
+.introduce-title {
+    width: 796px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Swagger;
+    font-size: 18pt;
+}
+
+.introduce-content {
+    width: 796px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+    font-family: 'Nanum Gothic'
+}
+
+@font-face {
+    font-family: Swagger;
+    src: url('/css/SDSwaggerTTF.ttf') format(truetype)
+}
+
+@import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb); 

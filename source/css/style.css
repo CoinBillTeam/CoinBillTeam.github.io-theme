@@ -22,7 +22,8 @@ body {
     background-color: #efd251;
     background-image: url('/css/logo-outline.svg');
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position: center;
+    background-size: auto 70%
 }
 
 .coming-title {
@@ -76,3 +77,73 @@ body {
 }
 
 @import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb); 
+
+@media only screen and (max-width: 320px) {
+    /** this media is really small? */
+    body {
+        background: red
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 680px) {
+    /** this media query for mobile view */
+
+    body {
+        background: #131313
+    }
+    .menu {
+        height: 369px;
+    }
+
+    .coming {
+        height: 100%;
+    }
+
+    .coming-content {
+        width: 95%;
+    }
+
+    .introduce {
+        height: 100%;
+    }
+
+    .introduce-layer{
+        width: 100%;
+    }
+
+    .introduce-title {
+        width: 100%;
+    }
+
+    .introduce-content {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+    /** this media query for tablet view */
+    body {
+        background: palegreen
+    }
+    .coming {
+        width: 100%
+    }
+
+    .coming-content {
+        width: 90%;
+    }
+
+    .introduce-layer {
+        width: 100%
+    }
+
+    .introduce-title {
+        width: 100%
+    }
+
+    .introduce-content {
+        width: 90%
+    }
+    
+}

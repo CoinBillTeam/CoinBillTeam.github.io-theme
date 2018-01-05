@@ -1,5 +1,5 @@
 body {
-    background-image: url('/css/background.svg');
+    background-image: url('/img/background.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
 .coming {
     height: 288px;
     background-color: #efd251;
-    background-image: url('/css/logo-outline.svg');
+    background-image: url('/img/logo-outline.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 70%
@@ -28,6 +28,7 @@ body {
 
 .coming-title {
     font-size: 24pt;
+    font-family: Swagger;
     color: #131313
 }
 
@@ -38,7 +39,8 @@ body {
     margin-right: auto;
     font-size: 12pt;
     font-family: 'Nanum Gothic';
-    color: #131313
+    color: #131313;
+    font-weight: bold;
 }
 
 .introduce {
@@ -73,25 +75,18 @@ body {
 
 @font-face {
     font-family: Swagger;
-    src: url('/css/SDSwaggerTTF.ttf') format(truetype)
+    src: url('/SDSwaggerTTF.ttf') format('woff')
 }
 
 @import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb); 
 
 @media only screen and (max-width: 320px) {
     /** this media is really small? */
-    body {
-        background: red
-    }
 }
 
 
 @media only screen and (min-width: 320px) and (max-width: 680px) {
     /** this media query for mobile view */
-
-    body {
-        background: #131313
-    }
     .menu {
         height: 369px;
     }
@@ -100,8 +95,13 @@ body {
         height: 100%;
     }
 
+    .coming-title {
+        margin-top: 40px;
+    }
+
     .coming-content {
         width: 95%;
+        margin-bottom: 40px;
     }
 
     .introduce {
@@ -109,6 +109,7 @@ body {
     }
 
     .introduce-layer{
+        margin-top: 20px;
         width: 100%;
     }
 
@@ -118,32 +119,37 @@ body {
 
     .introduce-content {
         width: 90%;
+        margin-bottom: 20px;
     }
 }
 
 @media only screen and (min-width: 680px) and (max-width: 1024px) {
     /** this media query for tablet view */
-    body {
-        background: palegreen
-    }
     .coming {
-        width: 100%
+        width: 100%;
+    }
+
+    .coming-title {
+        margin-top: 40px;
     }
 
     .coming-content {
         width: 90%;
+        margin-bottom: 40px;
     }
 
     .introduce-layer {
-        width: 100%
+        margin-top: 20px;
+        width: 100%;
     }
 
     .introduce-title {
-        width: 100%
+        width: 100%;
     }
 
     .introduce-content {
-        width: 90%
+        width: 90%;
+        margin-bottom: 20px;
     }
     
 }

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
+    <%- partial('_partial/head') %>
+    <body> 
+        <div class="menu">
+            <img class="menu-logo" src="/img/logo-white.svg"/>
+        </div>
+        <%- body %>
+        <%- partial('_partial/footer') %>
+    </body>
+</html>
